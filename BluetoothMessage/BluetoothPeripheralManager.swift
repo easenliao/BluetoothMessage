@@ -1,6 +1,12 @@
 import CoreBluetooth
+protocol BluetoothPeripheralManagerDelegate: AnyObject {
+    func startAdvertising()
+    func stopAdvertising()
+}
 let characteristicUUID = CBUUID.init(nsuuid: UUID.init())
 class BluetoothPeripheralManager: NSObject, CBPeripheralManagerDelegate {
+    static let shared = BluetoothPeripheralManager()
+    weak var delegate: BluetoothPeripheralManagerDelegate?
     var peripheralManager: CBPeripheralManager!
     var transferCharacteristic: CBMutableCharacteristic?
 
@@ -19,9 +25,10 @@ class BluetoothPeripheralManager: NSObject, CBPeripheralManagerDelegate {
         }
     }
     func peripheralManager(_ peripheral: CBPeripheralManager, central: CBCentral, didSubscribeTo characteristic: CBCharacteristic) {
-        print("中央设备已订阅特性")
-        // 此处可以保存中央设备的信息，或者根据业务需求处理
+        print("中央設備已經訂閱了特徵")
+        // 停止廣播
         if peripheralManager.isAdvertising {
+            delegate?.stopAdvertising()
             peripheralManager.stopAdvertising()
         }
     }
@@ -29,10 +36,12 @@ class BluetoothPeripheralManager: NSObject, CBPeripheralManagerDelegate {
     func sendData(_ data: Data) {
         peripheralManager.updateValue(data, for: transferCharacteristic!, onSubscribedCentrals: nil)
     }
-    func startAdvertising() {
+    func toggleAdvertising() {
         peripheralManager.startAdvertising([CBAdvertisementDataServiceUUIDsKey : [serviceUUID]])
+        delegate?.startAdvertising()
         if peripheralManager.isAdvertising {
             peripheralManager.stopAdvertising()
+            delegate?.stopAdvertising()
         }
     }
 }

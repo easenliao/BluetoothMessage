@@ -21,6 +21,10 @@
 		04831CC12B5E0A7200193743 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CBF2B5E0A7200193743 /* ChatViewController.swift */; };
 		04831CC22B5E0A7200193743 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04831CC02B5E0A7200193743 /* ChatViewController.xib */; };
 		04831CC42B5E0B0A00193743 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CC32B5E0B0A00193743 /* UIView+Extension.swift */; };
+		049391542B5E772B00EC7776 /* SearchDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049391522B5E772B00EC7776 /* SearchDeviceViewController.swift */; };
+		049391552B5E772B00EC7776 /* SearchDeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049391532B5E772B00EC7776 /* SearchDeviceViewController.xib */; };
+		049391582B5E7EE700EC7776 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049391562B5E7EE700EC7776 /* DeviceTableViewCell.swift */; };
+		049391592B5E7EE700EC7776 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 049391572B5E7EE700EC7776 /* DeviceTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		04831CBF2B5E0A7200193743 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		04831CC02B5E0A7200193743 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 		04831CC32B5E0B0A00193743 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		049391522B5E772B00EC7776 /* SearchDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDeviceViewController.swift; sourceTree = "<group>"; };
+		049391532B5E772B00EC7776 /* SearchDeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDeviceViewController.xib; sourceTree = "<group>"; };
+		049391562B5E7EE700EC7776 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		049391572B5E7EE700EC7776 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +126,13 @@
 				04831C992B5E02D200193743 /* Info.plist */,
 				04831CBB2B5E034700193743 /* BluetoothPeripheralManager.swift */,
 				04831CBD2B5E037000193743 /* BluetoothCentralManager.swift */,
+				049391522B5E772B00EC7776 /* SearchDeviceViewController.swift */,
+				049391532B5E772B00EC7776 /* SearchDeviceViewController.xib */,
 				04831CBF2B5E0A7200193743 /* ChatViewController.swift */,
 				04831CC02B5E0A7200193743 /* ChatViewController.xib */,
 				04831CC32B5E0B0A00193743 /* UIView+Extension.swift */,
+				049391562B5E7EE700EC7776 /* DeviceTableViewCell.swift */,
+				049391572B5E7EE700EC7776 /* DeviceTableViewCell.xib */,
 			);
 			path = BluetoothMessage;
 			sourceTree = "<group>";
@@ -247,8 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				04831C982B5E02D200193743 /* LaunchScreen.storyboard in Resources */,
+				049391592B5E7EE700EC7776 /* DeviceTableViewCell.xib in Resources */,
 				04831C952B5E02D200193743 /* Assets.xcassets in Resources */,
 				04831CC22B5E0A7200193743 /* ChatViewController.xib in Resources */,
+				049391552B5E772B00EC7776 /* SearchDeviceViewController.xib in Resources */,
 				04831C932B5E02D100193743 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049391542B5E772B00EC7776 /* SearchDeviceViewController.swift in Sources */,
 				04831CBC2B5E034700193743 /* BluetoothPeripheralManager.swift in Sources */,
 				04831CC42B5E0B0A00193743 /* UIView+Extension.swift in Sources */,
 				04831CBE2B5E037000193743 /* BluetoothCentralManager.swift in Sources */,
+				049391582B5E7EE700EC7776 /* DeviceTableViewCell.swift in Sources */,
 				04831C902B5E02D100193743 /* ViewController.swift in Sources */,
 				04831C8C2B5E02D100193743 /* AppDelegate.swift in Sources */,
 				04831CC12B5E0A7200193743 /* ChatViewController.swift in Sources */,
@@ -484,7 +500,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -517,7 +533,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

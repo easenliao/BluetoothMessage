@@ -31,7 +31,7 @@ class ChatViewController: UIViewController {
     }
 
     @IBAction func startAdvertising(_ sender: Any) {
-        peripheralManager?.startAdvertising()
+        peripheralManager?.toggleAdvertising()
     }
     /*
     // MARK: - Navigation
