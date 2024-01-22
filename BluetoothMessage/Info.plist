@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>給我喔</string>
 </dict>
 </plist>

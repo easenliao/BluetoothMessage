@@ -16,6 +16,11 @@
 		04831CA32B5E02D200193743 /* BluetoothMessageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CA22B5E02D200193743 /* BluetoothMessageTests.swift */; };
 		04831CAD2B5E02D200193743 /* BluetoothMessageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CAC2B5E02D200193743 /* BluetoothMessageUITests.swift */; };
 		04831CAF2B5E02D200193743 /* BluetoothMessageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CAE2B5E02D200193743 /* BluetoothMessageUITestsLaunchTests.swift */; };
+		04831CBC2B5E034700193743 /* BluetoothPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CBB2B5E034700193743 /* BluetoothPeripheralManager.swift */; };
+		04831CBE2B5E037000193743 /* BluetoothCentralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CBD2B5E037000193743 /* BluetoothCentralManager.swift */; };
+		04831CC12B5E0A7200193743 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CBF2B5E0A7200193743 /* ChatViewController.swift */; };
+		04831CC22B5E0A7200193743 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04831CC02B5E0A7200193743 /* ChatViewController.xib */; };
+		04831CC42B5E0B0A00193743 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04831CC32B5E0B0A00193743 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		04831CA82B5E02D200193743 /* BluetoothMessageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BluetoothMessageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04831CAC2B5E02D200193743 /* BluetoothMessageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothMessageUITests.swift; sourceTree = "<group>"; };
 		04831CAE2B5E02D200193743 /* BluetoothMessageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothMessageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04831CBB2B5E034700193743 /* BluetoothPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPeripheralManager.swift; sourceTree = "<group>"; };
+		04831CBD2B5E037000193743 /* BluetoothCentralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothCentralManager.swift; sourceTree = "<group>"; };
+		04831CBF2B5E0A7200193743 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		04831CC02B5E0A7200193743 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		04831CC32B5E0B0A00193743 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,11 @@
 				04831C942B5E02D200193743 /* Assets.xcassets */,
 				04831C962B5E02D200193743 /* LaunchScreen.storyboard */,
 				04831C992B5E02D200193743 /* Info.plist */,
+				04831CBB2B5E034700193743 /* BluetoothPeripheralManager.swift */,
+				04831CBD2B5E037000193743 /* BluetoothCentralManager.swift */,
+				04831CBF2B5E0A7200193743 /* ChatViewController.swift */,
+				04831CC02B5E0A7200193743 /* ChatViewController.xib */,
+				04831CC32B5E0B0A00193743 /* UIView+Extension.swift */,
 			);
 			path = BluetoothMessage;
 			sourceTree = "<group>";
@@ -233,6 +248,7 @@
 			files = (
 				04831C982B5E02D200193743 /* LaunchScreen.storyboard in Resources */,
 				04831C952B5E02D200193743 /* Assets.xcassets in Resources */,
+				04831CC22B5E0A7200193743 /* ChatViewController.xib in Resources */,
 				04831C932B5E02D100193743 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04831CBC2B5E034700193743 /* BluetoothPeripheralManager.swift in Sources */,
+				04831CC42B5E0B0A00193743 /* UIView+Extension.swift in Sources */,
+				04831CBE2B5E037000193743 /* BluetoothCentralManager.swift in Sources */,
 				04831C902B5E02D100193743 /* ViewController.swift in Sources */,
 				04831C8C2B5E02D100193743 /* AppDelegate.swift in Sources */,
+				04831CC12B5E0A7200193743 /* ChatViewController.swift in Sources */,
 				04831C8E2B5E02D100193743 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -425,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -450,6 +470,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,6 +478,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.easen.www.BluetoothMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -478,6 +503,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -485,6 +511,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.easen.www.BluetoothMessage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
